@@ -68,4 +68,9 @@ yarn-error.log
 # Yarn Integrity file
 .yarn-integrity
 
+# block conflict share-repository
 .gatsby-config.js
+.gatsby-meta-config.js
+.package.json
+.README.md
+.content/
