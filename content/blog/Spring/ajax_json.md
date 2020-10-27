@@ -54,15 +54,14 @@ import com.fasterxml.jackson.databind.ObjectMapper;
    public String memberList(@RequestParam Map<String, Object> parameters{
       String json = commandMap.get("paramList").toString();
       ObjectMapper mapper = new ObjectMapper();
-      //List<Map<String, Object>> paramList = mapper.readValue(json, new TypeReference<ArrayList<Map<String, Object>>>(){});
-      List<CafeEstateDonghoVO> paramList = mapper.readValue(json, new TypeReference<ArrayList<CafeEstateDonghoVO>>(){});
+      List<Map<String, Object>> paramList = mapper.readValue(json, new TypeReference<ArrayList<Map<String, Object>>>(){});
 }
 ```
 
 리스트를 DTO로 받아야할 경우는 아래와 같이 사용할 수 있다.
 
 ```java
-List<Map<String, Object>> paramList = mapper.readValue(json, new TypeReference<ArrayList<Map<String, Object>>>(){});
+List<dto> paramList = mapper.readValue(json, new TypeReference<ArrayList<dto>>(){});
 
 
 ```
