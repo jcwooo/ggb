@@ -51,7 +51,7 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 @RequestMapping("/memberInfo.do")
    public String memberList(@RequestParam Map<String, Object> parameters{
-      String json = commandMap.get("paramList").toString();
+      String json = parameters.get("paramList").toString();
       ObjectMapper mapper = new ObjectMapper();
       List<Map<String, Object>> paramList = mapper.readValue(json, new TypeReference<ArrayList<Map<String, Object>>>(){});
 }
