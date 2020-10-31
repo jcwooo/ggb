@@ -19,7 +19,6 @@ Ajax로 Controller에 파라미터를 넘길때 json 형태로 보낸다.
 만약 처리해야 될 사람이 여러명이라면 list형태 전송할 수 있다.
 
 ```java script
-
 var dataArray = [];
 var data1 = {
    "name" : "tom",
