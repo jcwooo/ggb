@@ -50,12 +50,9 @@ export default ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteMetadata.title}>
-      <Head title={HOME_TITLE} keywords={siteMetadata.keywords} />
-      <div>
-        <Bio />
-        <Search inputSearchWord={inputSearchWord} />        
-      </div>
-      
+      <Head title={HOME_TITLE} keywords={siteMetadata.keywords} />      
+       <Bio />
+       <Search inputSearchWord={inputSearchWord} />        
       <Category
         categories={categories}
         category={category}
